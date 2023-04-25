@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Poppins, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.li-drop{
+
+}
+
+.hero-grad{
+    background: radial-gradient( #019668 , #071226)50%
+}
+
+.li-drop:hover .navcon {
+    transform: rotate(-180deg);
+}
+
+.navdrop{
+    transition: .2s ease-in-out;
+    animation-delay: .5s;
+}
+
+.li-drop:hover .navdrop {
+    height: 200px;
+    animation-delay: .5s;
+    /* min-height: fit-content; */
+}
+
+.container{
+    margin: auto;
+    width: 100%;
 }
