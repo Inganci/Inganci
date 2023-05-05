@@ -9,17 +9,18 @@ const Navbar = () => {
   return (
     <div className="w-full z-50 bg-white p-3 py-5 2xl:p-5 fixed top-0 shadow-md">
       {/* ABSOLUTE SIDE DRAWER */}
-      <div style={{ left: openNav === true ? "0px" : "-260px" }} className="transition duration-300 fixed top-0 h-screen w-[260px] bg-white shadow-md ">
-
-      </div>
+      <div
+        style={{ left: openNav === true ? "0px" : "-260px" }}
+        className="transition duration-300 fixed top-0 h-screen w-[260px] bg-white shadow-md "
+      ></div>
 
       {/* CONTAINER  */}
       <div className="container">
         <div id="nav" className="flex items-center justify-between">
           {/* LOGO */}
-          <div className="">
+          <Link to="/"><div className="">
             <h1 className="text-primary font-bold text-2xl ">inganci</h1>
-          </div>
+          </div></Link>
 
           {/* LINKS AND BUTTONS*/}
           <div className="flex items-center justify-between gap-20">
@@ -33,7 +34,7 @@ const Navbar = () => {
                     size="20"
                     className="navcon transition duration-200"
                   />
-                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] h-0">
+                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%]  h-0 flex justify-center ">
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
                         About Inganci
@@ -66,7 +67,7 @@ const Navbar = () => {
                     size="20"
                     className="navcon transition duration-200"
                   />
-                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] h-0">
+                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] flex justify-center h-0">
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
                         About Inganci
@@ -99,7 +100,7 @@ const Navbar = () => {
                     size="20"
                     className="navcon transition duration-200"
                   />
-                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] h-0">
+                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] flex justify-center h-0">
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
                         About Inganci
@@ -125,14 +126,14 @@ const Navbar = () => {
               </Link>
 
               {/* INVESTORS */}
-              <Link to="/">
+              <Link to="/investors">
                 <li className="flex items-center gap-1 text-gray1 li-drop relative">
                   <p>Investors</p>
                 </li>
               </Link>
 
               {/* CAREERS */}
-              <Link to="/">
+              <Link to="/careers">
                 <li className="flex items-center gap-1 text-gray1 li-drop relative">
                   <p>Careers</p>
                 </li>
@@ -140,12 +141,19 @@ const Navbar = () => {
             </ul>
 
             {/* BUTTON */}
-            <button className="hidden xl:block bg-accent py-3 w-[142px] rounded text-sm hover:bg-primary hover:text-white transition duration-200">
-              Contacts
-            </button>
+            <Link to="/contact" >
+              <button className="hidden xl:block bg-primary py-3 w-[142px] rounded text-white text-sm hover:bg-accent hover:text-gray1 transition duration-200">
+                Contacts
+              </button>
+            </Link>
 
             {/* HAMBURGER MENU */}
-            <div className="block xl:hidden " onClick={() => {setOpenNav(!openNav)}} >
+            <div
+              className="block xl:hidden "
+              onClick={() => {
+                setOpenNav(!openNav);
+              }}
+            >
               <HambergerMenu className="text-primary" size="32" />
             </div>
           </div>
