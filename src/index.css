@@ -1,38 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: Poppins, sans-serif;
+* {
+  font-family: Poppins, sans-serif;
 }
 
-.li-drop{
-
+.li-drop {
 }
 
-.hero-grad{
-    background: radial-gradient( #019668 , #071226)50%
+.hero-grad {
+  background: radial-gradient(
+    farthest-corner at 0% 100%,
+    rgb(1, 150, 104, 0.86) 0%,
+    rgb(7, 18, 38, 0.86) 60%
+  );
+  background-position: bottom;
+}
+
+.footer-grad {
+  background: linear-gradient(
+    45deg,
+    rgb(1, 150, 104, 1) 0%,
+    rgb(7, 18, 38, 1) 45%
+  );
+  background-position: bottom;
+}
+
+.navcon {
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+form input {
+  color: #909090;
+  font-weight: 300;
+}
+
+form input:focus {
+  border: 2px #019668 solid;
+  outline: none;
+  color: #909090;
+  
+}
+
+form input::placeholder {
+  color: #0000004b;
+}
+
+form textarea {
+  color: #909090;
+  font-weight: 300;
+}
+form textarea:focus {
+  border: 2px #019668 solid;
+  outline: none;
+  color: #909090;
+}
+form textarea::placeholder {
+  color: #0000004b;
 }
 
 .li-drop:hover .navcon {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
-.navdrop{
-    transition: .2s ease-in-out;
-    animation-delay: .5s;
+.navdrop {
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.5s;
 }
 
 .li-drop:hover .navdrop {
-    height: 200px;
-    animation-delay: .5s;
-    /* min-height: fit-content; */
+  height: 200px;
+  animation-delay: 0.5s;
+  /* min-height: fit-content; */
 }
 
-.container{
-    margin: auto;
-    width: 100%;
+.container {
+  margin: auto;
+  width: 100%;
+  /* color: #fff5c8 */
+}
+
+.card .topcard img {
+  transition: 0.9s ease-in-out;
+  filter: grayscale(100%);
+}
+.card:hover .topcard img {
+  transform: scale(1.05);
+  filter: grayscale(20%);
+}
+
+.swipebg {
+  /* background: linear-gradient( to top, rgb(0, 0, 0), rgb(0, 0, 0, 0.5)) ,url("./assets/eggbg.jpg"); */
+
+  background-size: cover;
+}
+
+.eachbg {
+  background: url("./assets/eggbg.jpg");
+  background-size: cover;
+  /* background: rgba(0, 0, 0, 0); */
 }
