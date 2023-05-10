@@ -105,3 +105,18 @@ form textarea::placeholder {
   background-size: cover;
   /* background: rgba(0, 0, 0, 0); */
 }
+
+.jump{
+  color:#d7b30f
+}
+
+.scrollbar::-webkit-scrollbar{
+  height: 4px;
+  background: #ffd82848;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+  height: 4px;
+  background: #ffd828c6;
+  border-radius: 50px;
+}

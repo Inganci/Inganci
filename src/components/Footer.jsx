@@ -94,7 +94,7 @@ const Footer = () => {
 
             {/* WHITE RECTANGLE CONTAINING THE COPY RIGHTS */}
             <div className="bg-white rounded-md p-[18px] flex items-center justify-between">
-              <p className="text-xs 2xl:text-sm">Mafi-inganci@2023</p>
+              <p className="text-xs 2xl:text-sm">Inganci@2023</p>
               <p className="text-xs 2xl:text-sm text-primary">
                 <Link to="/">Contact our Support</Link>
               </p>

@@ -25,7 +25,7 @@ const Hero = () => {
           {/* HEADER TEXT */}
           <div className="mb-[2rem]">
             <h1 className=" text-[56px] 2xl:text-[72px] font-bold text-white leading-[56px] 2xl:leading-[76px] mb-[26px]">
-              Mafi-Inganci <br /> Egg Company
+              Inganci Egg <br /> Company
             </h1>
             <p className="text-white opacity-90 font-normal w-[70%] ">
               The brand of egg products solutions from one of the leading
@@ -47,7 +47,6 @@ const Hero = () => {
         </div>
       </div>
 
-      
       <Swiper
         style={{ height: "100%", overflow: "hidden", widhth: "100vw" }}
         modules={[Pagination, EffectFade, Autoplay]}

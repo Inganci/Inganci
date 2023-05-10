@@ -27,7 +27,7 @@ const HomeAbout = () => {
         {/* TAG AND TITLE */}
         <div className="flex items-center gap-4  text-primary mt-[2rem]">
           <hr className="w-[40px] h-[2px] border-none bg-primary" />
-          <h4 className="font-semibold ">ABOUT US</h4>
+          <h4 className="font-semibold ">ABOUT THE COMPANY</h4>
           <hr className="w-[380px] h-[5px] border-none bg-accent" />
         </div>
         {/* NEXT CONTENT */}
@@ -35,10 +35,10 @@ const HomeAbout = () => {
           {/* LEFT SIDE WITH THE CONTENT */}
           <div className="flex flex-col gap-4 pr-[3rem] flex-1">
             <h3 className="text-[32px] font-semibold ">
-              More About Mafi-Inganci
+              About Inganci
             </h3>
             <p className="text-typeGray text-sm 2xl:text-base">
-              More About Mafi-Inganci It started in 1884 when Martinus Wulms
+              Inganci started in ____ when Martinus Wulms
               opened a grocery store and soon expanded it into a true trading
               post in grains, eggs, cheese and butter. Over the past century,
               the family business has been passed down from generation to
