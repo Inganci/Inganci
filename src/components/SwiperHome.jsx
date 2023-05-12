@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import eggs from "../assets/eggpack.jpg";
-import win1 from "../assets/window1.svg";
+// import eggs from "../assets/eggpack.jpg";
+// import win1 from "../assets/window1.svg";
 import win2 from "../assets/window2.svg";
 import win3 from "../assets/window3.svg";
 import win4 from "../assets/window4.svg";
@@ -16,13 +16,20 @@ import win5 from "../assets/window5.svg";
 
 const SwiperHome = () => {
   return (
-    <div className="w-full min-h-screen bg-gray2 swipebg flex items-center py-[4rem] pb-[6rem]">
+    <div className="w-full min-h-screen bg-gray2 swipebg flex items-center py-[6rem]">
       <div className="container">
-        {/* TAG AND TITLE */}
-        <div className="flex items-center gap-4  text-white mt-[2rem]">
-          <hr className="w-[40px] h-[2px] border-none bg-white" />
-          <h4 className="font-semibold ">OUR IP</h4>
-          <hr className="w-[380px] h-[5px] border-none bg-accent" />
+        <div className="w-[90%] mx-auto mb-[2rem] flex items-center justify-between">
+          {/* TAG AND TITLE */}
+          <div className="flex items-center gap-4  text-primary">
+            <hr className="w-[40px] h-[2px] border-none bg-primary" />
+            <h4 className="font-semibold ">FOOTPRINT</h4>
+            <hr className="w-[380px] h-[5px] border-none bg-accent" />
+          </div>
+          <div>
+            <h3 className="text-[32px] text-white font-semibold text-center">
+              Detail of manufacturing facility
+            </h3>
+          </div>
         </div>
         <div className="w-[80%] h-[80vh] mx-auto">
           <Swiper
@@ -60,7 +67,7 @@ const SwiperHome = () => {
             </SwiperSlide> */}
             {/* SLIDE 2 */}
             <SwiperSlide className="w-full bg-gray2 " effect="fade">
-              <div className="w-full h-full flex items-center justify-between">
+              <div className="w-full h-full flex flex-row-reverse items-center justify-between">
                 <div className="w-[48%]">
                   <img
                     className="w-full "
@@ -88,7 +95,7 @@ const SwiperHome = () => {
             </SwiperSlide>
             SLIDE 3
             <SwiperSlide className="w-full bg-gray2 " effect="fade">
-              <div className="w-full h-full flex items-center justify-between">
+              <div className="w-full h-full flex flex-row-reverse items-center justify-between">
                 <div className="w-[48%]">
                   <img
                     className="w-full "
@@ -116,7 +123,7 @@ const SwiperHome = () => {
             </SwiperSlide>
             {/* SLIDE 4 */}
             <SwiperSlide className="w-full bg-gray2 " effect="fade">
-              <div className="w-full h-full flex items-center justify-between">
+              <div className="w-full h-full flex flex-row-reverse items-center justify-between">
                 <div className="w-[48%]">
                   <img
                     className="w-full "
@@ -144,7 +151,7 @@ const SwiperHome = () => {
             </SwiperSlide>
             {/* SLIDE 5 */}
             <SwiperSlide className="w-full bg-gray2" effect="fade">
-              <div className="w-full h-full flex items-center justify-between">
+              <div className="w-full h-full flex flex-row-reverse items-center justify-between">
                 <div className="w-[48%]">
                   <img
                     className="w-full "

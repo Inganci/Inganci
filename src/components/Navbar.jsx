@@ -59,10 +59,10 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              {/* SOLUTIONS */}
+              {/* PRODUCTS */}
               <Link to="/">
                 <li className="flex items-center gap-1 text-gray1 li-drop relative">
-                  <p>Solutions</p>
+                  <p>Products</p>
                   <ArrowDown2
                     size="20"
                     className="navcon transition duration-200"
@@ -92,38 +92,6 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              {/* BRANDS */}
-              <Link to="/">
-                <li className="flex items-center gap-1 text-gray1 li-drop relative">
-                  <p>Brands</p>
-                  <ArrowDown2
-                    size="20"
-                    className="navcon transition duration-200"
-                  />
-                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] flex justify-center h-0">
-                    <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        About Inganci
-                      </p>
-                    </Link>
-                    <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        Our Team
-                      </p>
-                    </Link>
-                    <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        M & A
-                      </p>
-                    </Link>
-                    <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        Insights
-                      </p>
-                    </Link>
-                  </div>
-                </li>
-              </Link>
 
               {/* INVESTORS */}
               <Link to="/investors">
@@ -132,7 +100,15 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              {/* CAREERS */}
+              
+              {/* BLOG */}
+              <Link to="/blog">
+                <li className="flex items-center gap-1 text-gray1 li-drop relative">
+                  <p>Blog</p>
+                </li>
+              </Link>
+
+              {/* CAREERS */} 
               <Link to="/careers">
                 <li className="flex items-center gap-1 text-gray1 li-drop relative">
                   <p>Careers</p>

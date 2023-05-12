@@ -26,7 +26,7 @@ const OurTeam = () => {
               Meet our Team
             </h3>
 
-            {/* STARS ROW */}
+            {/* STARS ROW */} 
             <div className="flex w-[10%] mx-auto mb-8 text-primary justify-between">
               <Star1 className="" size="10" variant="Bold" />
               <Star1 className="" size="10" variant="Bold" />

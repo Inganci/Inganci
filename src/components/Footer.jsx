@@ -53,7 +53,7 @@ const Footer = () => {
                   <Message size="18" variant="Bold" />
                   <p className="text-sm 2xl:text-">
                     Mail:{" "}
-                    <span className="underline">info@mafi-inganci.com</span>
+                    <span className="underline">info@inganci.com</span>
                   </p>
                 </div>
               </div>
