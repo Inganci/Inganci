@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import eggnbowl from "../assets/eggnbowl.jpg"
 import { Link } from 'react-router-dom';
 
-const Careers = () => {
+const Careers = () => { 
   return (
     <div className="w-full ">
       <div className="w-full min-h-screen mb-[5rem]">
@@ -11,13 +11,19 @@ const Careers = () => {
         <div className="container">
           {/* CONTAINER WRAPPER */}
           <div>
-            {/* THE HEADER TEXT PART */}
-            <div className="mt-[8rem] 2xl:mt-[10rem] mb-[5rem] flex items-center gap-4">
-              <hr className="w-24 h-1 bg-primary border-none " />
-              <h1 className="whitespace-nowrap text-3xl 2xl:text-4xl text-gray4 font-semibold  ">
-                CAREERS
-              </h1>
-              <hr className="h-1 w-[40%] bg-accent border-none    " />
+            
+
+            {/* THE TOP SECTION FOR THE TITLE AND THE SUBTITLE SEARCH BAR MAYBE */}
+            <div className="w-full min-h-[40vh] 2xl:min-h-[30vh] mb-[6rem] flex items-end">
+              <div className="w-[70%] mx-auto text-center">
+                <h1 className="text-6xl mb-6">Careers</h1>
+                <p className="w-[70%] mx-auto text-typeGray">
+                  {" "}
+                  Welcome to the blogs and articles section of our website,
+                  Here, we keep you up to date on all the interesting and news
+                  as well as all imoirtant updates
+                </p>
+              </div>
             </div>
 
             {/* THE FEATURED IMAGE DIV */}
@@ -52,7 +58,14 @@ const Careers = () => {
                 products and services through game-changing IP and knowledge, we
                 apply the same approach across our workforce, as we embrace
                 diversity of background, perspective, culture, and experience.
-                Learn more <Link to="/" className='text-primary hover:decoration-underline' >here</Link>.
+                Learn more{" "}
+                <Link
+                  to="/"
+                  className="text-primary hover:decoration-underline"
+                >
+                  here
+                </Link>
+                .
               </p>
             </div>
           </div>

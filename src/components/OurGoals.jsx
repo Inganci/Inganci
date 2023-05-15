@@ -6,10 +6,13 @@ import { Bubble, TickCircle } from "iconsax-react";
 import eggsFloat from '../assets/eggsfloat.png';
 
 
+
 const OurGoals = () => {
+  
   return (
-    <div className="min-h-screen w-full bg-white z-10 relative py-[5rem]">
-      <div className="container">
+    <div className="min-h-screen w-full flex items-center bg-white z-10 relative py-[5rem]">
+      <div className="container h-full relative">
+
         {/* TAG AND TITLE */}
         {/* <div className="flex items-center gap-4  text-primary mt-[2rem]">
           <hr className="w-[40px] h-[2px] border-none bg-primary" />
@@ -17,7 +20,7 @@ const OurGoals = () => {
           <hr className="w-[380px] h-[5px] border-none bg-accent" />
         </div> */}
         {/* NEXT CONTENT */}
-        <div className="w-[80%] mx-auto flex items-center justify-between  ">
+        <div className="w-[80%] mx-auto h-full flex items-center justify-between  ">
           {/* OUR MISSION CONTENT */}
           <div className="flex flex-col gap-4 -1">
             {/* DESIGN AND CONTENT */}

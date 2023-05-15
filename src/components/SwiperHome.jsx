@@ -13,11 +13,18 @@ import win2 from "../assets/window2.svg";
 import win3 from "../assets/window3.svg";
 import win4 from "../assets/window4.svg";
 import win5 from "../assets/window5.svg";
+import eggstack from "../assets/eggstack.png";
 
 const SwiperHome = () => {
   return (
     <div className="w-full min-h-screen bg-gray2 swipebg flex items-center py-[6rem]">
-      <div className="container">
+      <div className="container relative">
+
+        {/* THE EGG IMAGE BY THE BOTTOM LEFT */}
+        <div className="absolute w-[20%] bottom-0  -left-[0%] z-10">
+          <img className="w-full " src={eggstack} alt="inganci.com" />
+        </div>
+
         <div className="w-[90%] mx-auto mb-[2rem] flex items-center justify-between">
           {/* TAG AND TITLE */}
           <div className="flex items-center gap-4  text-primary">

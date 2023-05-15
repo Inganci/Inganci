@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { Call, Message, Message2, Send } from "iconsax-react";
+import { Call, Message, Send } from "iconsax-react";
 
 const ContactUs = () => {
   return (

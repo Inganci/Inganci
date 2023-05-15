@@ -27,8 +27,7 @@ const Navbar = () => {
             {/* LINKS */}
             <ul className="hidden lg:flex items-center gap-16 text-sm text 2xl:text-base ">
               {/* ABOUT US */}
-              <Link to="/">
-                <li className="flex items-center gap-1 text-gray1 li-drop relative">
+                <li className="flex items-center cursor-pointer gap-1 text-gray1 li-drop relative">
                   <p>About Us</p>
                   <ArrowDown2
                     size="20"
@@ -57,11 +56,9 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </li>
-              </Link>
 
               {/* PRODUCTS */}
-              <Link to="/">
-                <li className="flex items-center gap-1 text-gray1 li-drop relative">
+                <li className="flex items-center gap-1 cursor-pointer text-gray1 li-drop relative">
                   <p>Products</p>
                   <ArrowDown2
                     size="20"
@@ -90,7 +87,6 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </li>
-              </Link>
 
 
               {/* INVESTORS */}
