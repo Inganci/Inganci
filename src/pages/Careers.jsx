@@ -1,9 +1,12 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import eggnbowl from "../assets/eggnbowl.jpg"
-import { Link } from 'react-router-dom';
+import React from "react";
+import Footer from "../components/Footer";
+import eggnbowl from "../assets/eggnbowl.jpg";
+import { Link, useNavigate } from "react-router-dom";
 
-const Careers = () => { 
+const Careers = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="w-full ">
       <div className="w-full min-h-screen mb-[5rem]">
@@ -11,8 +14,6 @@ const Careers = () => {
         <div className="container">
           {/* CONTAINER WRAPPER */}
           <div>
-            
-
             {/* THE TOP SECTION FOR THE TITLE AND THE SUBTITLE SEARCH BAR MAYBE */}
             <div className="w-full min-h-[40vh] 2xl:min-h-[30vh] mb-[6rem] flex items-end">
               <div className="w-[70%] mx-auto text-center">
@@ -59,14 +60,30 @@ const Careers = () => {
                 apply the same approach across our workforce, as we embrace
                 diversity of background, perspective, culture, and experience.
                 Learn more{" "}
-                <Link
-                  to="/"
-                  className="text-primary hover:decoration-underline"
-                >
+                <Link to="/" className="text-primary hover:underline">
                   here
                 </Link>
                 .
               </p>
+              <p className="text-sm 2xl:text-base leading-6 2xl:leading-8">
+                INGANCI is publicly listed on NASDAQ (AGRI) and has a seasoned
+                senior team and a vision that creates interest, excitement and,
+                usually, the question: “How can I be a part of this?” <br />{" "}
+                <br /> If you’d like to be on the INGANCI team and don’t see a
+                position that fits your skill set,{" "}
+                <a className="text-primary hover:underline " href="/">
+                  email
+                </a>{" "}
+                us your resume with a short note on why you believe that you
+                would be a great fit for INGANCI.
+              </p>
+              <hr className="w-full border-t" />
+              <div className="w-full flex items-center justify-center py-[1rem] ">
+                <button onClick={() => {navigate('/careers/jobs')}} className="flex justify-center self-end gap-3 items-center bg-primary py-3 px-4 min-w-[142px] rounded text-white text-sm hover:-translate-y-1 active:-translate-y-[2px]  hover:shadow-lg transition duration-200">
+                  View available positions
+                </button>
+              </div>
+              <hr className="w-full border-t" />
             </div>
           </div>
         </div>
@@ -74,6 +91,6 @@ const Careers = () => {
       <Footer />
     </div>
   );
-}
+};
 
-export default Careers
+export default Careers;

@@ -25,7 +25,7 @@ const Blog = () => {
             </div>
 
             {/* BOTTOM SECTION WHERE ALL THE BLOGS SHALL BE DISPLAYED */}
-            <div className="w-[70%] mx-auto flex flex-col gap-[3rem] relative">
+            <div className="w-[70%] mx-auto flex flex-col gap-[3rem] mb-[6rem] relative">
               {/* THIS IS THE AREA WHERE ALL THE BLOGS ARE MAPPED OUT */}
               {blogs && blogs.length ? (
                 blogs.map((item) => (
@@ -40,18 +40,15 @@ const Blog = () => {
                     </div>
                     {/* BOTTOM SECTION FOR THE CONTENT*/}
                     <div className="w-full p-[50px] relative">
-
                       {/* THE DAY DATE DIV */}
                       <div className="absolute bottom-full bg-white py-1 text-gray1 text-6xl 2xl:text-6xl w-[100px] aspect-square rounded-t-md flex items-center justify-center">
-                        <p className='font-normal' >{item.date.slice(0, 2)}</p>
-                      </div>
-                     
-                     
-                      {/* THE MONTH AND YEAR DIV */}
-                      <div className="absolute top-0 bg-accent py-1 text-primaryDark text-sm 2xl:text-base w-[100px]  rounded-b-md flex items-center justify-center">
-                        <p className='font-[600]' >{item.date.slice(2, 100)}</p>
+                        <p className="font-normal">{item.date.slice(0, 2)}</p>
                       </div>
 
+                      {/* THE MONTH AND YEAR DIV */}
+                      <div className="absolute top-0 bg-accent py-1 text-primaryDark text-sm 2xl:text-base w-[100px]  rounded-b-md flex items-center justify-center">
+                        <p className="font-[600]">{item.date.slice(2, 100)}</p>
+                      </div>
 
                       {/* THE ADMIN AND COMMENTS */}
                       <ul className="flex items-center gap-4">
@@ -69,7 +66,9 @@ const Blog = () => {
                             size="22"
                             variant="Outline"
                           />
-                          <p className="m-0 text-sm">{item.comments}Comments</p>
+                          <p className="m-0 text-sm">
+                            {item.comments} Comments
+                          </p>
                         </li>
                       </ul>
 
@@ -90,50 +89,11 @@ const Blog = () => {
                   </div>
                 ))
               ) : (
-                <div className="w-full flex flex-col bg-white shadow-xl mb-[6rem] rounded-b-2xl ">
+                <div className="w-full  bg-white shadow-xl mb-[6rem] rounded-b-2xl ">
                   {/* TOP SECTION FOR THE IMAGE*/}
-                  <div className="w-full aspect-[2.2] bg-accent">
-                    {/* <img src={} alt="inganci.com" /> */}
-                  </div>
-                  {/* BOTTOM SECTION FOR THE CONTENT*/}
-                  <div className="w-full p-[50px] ">
-                    {/* THE ADMIN AND COMMENTS */}
-                    <ul className="flex items-center gap-4">
-                      <li className="flex gap-2  items-center">
-                        <ProfileCircle
-                          className="text-primary"
-                          size="24"
-                          variant="Bold"
-                        />
-                        <p className="m-0 text-sm">Admin</p>
-                      </li>
-                      <li className="flex gap-1 items-center">
-                        <Messages2
-                          className="text-primary"
-                          size="22"
-                          variant="Outline"
-                        />
-                        <p className="m-0 text-sm">22 Comments</p>
-                      </li>
-                    </ul>
-
-                    <div className="w-full ">
-                      <h2 className="text-gray1 my-4 font-semibold text-4xl">
-                        Minuter him own clothes but observe country.
-                      </h2>
-                      <p className="text-sm 2xl:text-base text-typeGray ">
-                        Bndulgence diminution so discovered mr apartments. Are
-                        off under folly death wrote cause her way spite. Plan
-                        upon yet way get cold spot its week. Almost do am or
-                        limits hearts. Resolve parties but why she shewing. She
-                        sang know now
-                      </p>
-                      <div className="w-full flex mt-6">
-                        <button className="hidden xl:block bg-primary  py-3 w-[142px] rounded-full text-sm text-white hover:bg-primary hover:text-wehite hover:-translate-y-1 active:translate-y-[2px] hover:shadow-md transition duration-200">
-                          Learn More
-                        </button>
-                      </div>
-                    </div>
+                  <div className="w-full aspect-[2.2] bg-inner flex items-center justify-center">
+                    {/* <img src={sadface} alt="inganci.com" /> */}
+                    <p className='text-typeGray'>Oops! unfortunately, there are no blogs for now, please check back soon</p>
                   </div>
                 </div>
               )}
