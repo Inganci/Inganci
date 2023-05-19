@@ -41,12 +41,12 @@ const Navbar = () => {
                     </Link>
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        Our Team
+                        M & A
                       </p>
                     </Link>
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        M & A
+                        Our Team
                       </p>
                     </Link>
                     <Link to="/">
@@ -64,25 +64,20 @@ const Navbar = () => {
                     size="20"
                     className="navcon transition duration-200"
                   />
-                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white w-[200%] flex justify-center h-0">
+                  <div className="transition duration-200 overflow-hidden navdrop absolute top-[280%] right-0 shadow-md rounded-md flex-col bg-white min-w-[200%] flex justify-center h-0">
                     <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        About Inganci
+                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010] whitespace-nowrap">
+                        Egg Solution/Product
                       </p>
                     </Link>
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        Our Team
+                        Consulting
                       </p>
                     </Link>
                     <Link to="/">
                       <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        M & A
-                      </p>
-                    </Link>
-                    <Link to="/">
-                      <p className="transition duratioon-200 px-4 py-2 hover:bg-[#00000010]">
-                        Insights
+                        Project
                       </p>
                     </Link>
                   </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade, Autoplay } from "swiper";
 import "swiper/css";
@@ -7,9 +7,23 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import eggs from "../assets/eggpack.jpg";
+// import eggs from "../assets/eggpack.jpg";
+import { titles } from "../data/data";
 
 const Hero = () => {
+
+  const [titleIdx, setTitleIdx] = useState(0);
+
+  
+  const handleChangeTitleIndex = () => { 
+    setTitleIdx(titleIdx + 1)
+    if (titleIdx >= titles.length - 1 ) {
+      setTitleIdx(0)
+    }
+    console.log(titleIdx)
+  }
+
+  
   return (
     <div className=" z-10 w-full h-screen overflow-hidden relative">
       {/* SIDEBAR WITH CONTENT */}
@@ -24,9 +38,18 @@ const Hero = () => {
 
           {/* HEADER TEXT */}
           <div className="mb-[2rem]">
-            <h1 className=" text-[56px] 2xl:text-[72px] font-bold text-white leading-[56px] 2xl:leading-[76px] mb-[26px]">
-              Inganci Egg <br /> Company
-            </h1>
+            {titles && titles.length
+              ? titles.map((item, idx) => (
+                  <>
+                    {idx === titleIdx && (
+                      <h1 className="  my-fadein text-[56px] 2xl:text-[72px] font-bold text-white leading-[56px] 2xl:leading-[76px] mb-[26px]">
+                        {item.title}
+                      </h1>
+                    )}
+                  </>
+                ))
+              : null}
+
             <p className="text-white opacity-90 font-normal w-[70%] ">
               The brand of egg products solutions from one of the leading
               chicken egg producers
@@ -53,38 +76,29 @@ const Hero = () => {
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        effect="fade"
+        // effect="fade"
         autoplay={{ delay: 3000 }}
         loop
         pagination={{ clickable: true }}
         scrollbar={false}
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        onSlideChange={() => {
+          handleChangeTitleIndex();
+          console.log("slide change");
+        }}
       >
-        <SwiperSlide className="w-full" effect="fade">
-          <div className="w-full h-full flex items-center justify-center">
-            <img
-              className="h-[100%] max-w-fit w-auto xl:w-[100%] xl:max-w-full m-auto"
-              src={eggs}
-              alt="inganci.com/eggs.jpg"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide effect="fade">
-          <div className="w-full h-[100%] flex items-center justify-center bg-primary">
-            slide 1
-          </div>
-        </SwiperSlide>
-        <SwiperSlide effect="fade">
-          <div className="w-full h-[100%] flex items-center justify-center bg-accent">
-            slide 2
-          </div>
-        </SwiperSlide>
-        <SwiperSlide effect="fade">
-          <div className="w-full h-[100%] flex items-center justify-center bg-accent1">
-            slide 3
-          </div>
-        </SwiperSlide>
+        {titles &&
+          titles.map((item) => (
+            <SwiperSlide className="w-full" effect="fade">
+              <div style={{background: item.colors, }} className="w-full h-full flex items-center justify-center">
+                <img
+                  className="h-[100%] max-w-fit w-auto xl:w-[100%] xl:max-w-full m-auto"
+                  src={item.image}
+                  alt="inganci.com/eggs.jpg"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </div>
   );

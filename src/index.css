@@ -107,7 +107,7 @@ form textarea::placeholder {
 }
 
 .jump{
-  color:#d7b30f
+  color: #0066f5
 }
 
 .scrollbar::-webkit-scrollbar{
@@ -119,4 +119,18 @@ form textarea::placeholder {
   height: 4px;
   background: #ffd828c6;
   border-radius: 50px;
+}
+
+.my-fadein{
+  opacity:1;
+  animation: fadeIn 2s ;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

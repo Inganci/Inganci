@@ -76,3 +76,49 @@ export const jobs = [
     keys: ["Accounting", "Management", "Finance", "Book Keeping"],
   },
 ];
+
+
+export const titles = [
+  {
+    id: 1,
+    title: "Inganci Egg Company",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#019668",
+  },
+  {
+    id: 2,
+    title: "Local Integrated Food/Food Ingredient Provider",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#004630",
+  },
+  {
+    id: 3,
+    title: "Built on Tech Transformation",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#FFD628",
+  },
+  {
+    id: 4,
+    title: "Supplying High Quality Nutritious Ingredients",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#d7b30f",
+  },
+  {
+    id: 5,
+    title: "Next Generation of Food Ingredients",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#0066f5",
+  },
+  {
+    id: 6,
+    title: "Localized High Tech Production Facilities",
+    image: "",
+    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+    colors: "#071226",
+  },
+];
