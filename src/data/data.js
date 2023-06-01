@@ -82,7 +82,7 @@ export const titles = [
   {
     id: 1,
     title: "Inganci Egg Company",
-    image: "",
+    image: p4,
     desc: "The brand of egg products solutions from one of the leading chicken egg producers",
     colors: "#019668",
   },
