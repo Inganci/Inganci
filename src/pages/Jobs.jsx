@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import { jobs } from "../data/data";
 import { ProfileCircle, Send } from "iconsax-react";
 
 const Jobs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="w-full">
       {/* THE TOP SECTION WITH THE TITLE AND THE SEARCH BAR */}

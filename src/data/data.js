@@ -81,44 +81,56 @@ export const jobs = [
 export const titles = [
   {
     id: 1,
-    title: "Inganci Egg Company",
+    title:
+      "INGANCI a local integrated food ingredient provider built on tech transformation",
     image: p4,
     desc: "The brand of egg products solutions from one of the leading chicken egg producers",
     colors: "#019668",
   },
   {
     id: 2,
-    title: "Local Integrated Food/Food Ingredient Provider",
+    title:
+      "We are supplying healthier high quality nutritious ingredients all locally sourced",
     image: "",
     desc: "The brand of egg products solutions from one of the leading chicken egg producers",
     colors: "#004630",
   },
   {
     id: 3,
-    title: "Built on Tech Transformation",
+    title:
+      "We are creating the next generation of food ingredient using high tech production facilities ",
     image: "",
     desc: "The brand of egg products solutions from one of the leading chicken egg producers",
     colors: "#FFD628",
   },
   {
     id: 4,
-    title: "Supplying High Quality Nutritious Ingredients",
+    title:
+      "INGANCI is bringing together research, local manufacturing and also adding value to the end customer",
     image: "",
     desc: "The brand of egg products solutions from one of the leading chicken egg producers",
     colors: "#d7b30f",
   },
-  {
-    id: 5,
-    title: "Next Generation of Food Ingredients",
-    image: "",
-    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
-    colors: "#0066f5",
-  },
-  {
-    id: 6,
-    title: "Localized High Tech Production Facilities",
-    image: "",
-    desc: "The brand of egg products solutions from one of the leading chicken egg producers",
-    colors: "#071226",
-  },
+  // {
+  //   id: 5,
+  //   title: "Next Generation of Food Ingredients",
+  //   image: "",
+  //   desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+  //   colors: "#0066f5",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Localized High Tech Production Facilities",
+  //   image: "",
+  //   desc: "The brand of egg products solutions from one of the leading chicken egg producers",
+  //   colors: "#071226",
+  // },
 ];
+
+// Slide 1:INGANCI a local integrated food ingredient provider built on tech transformation
+
+// Slide 2: We are supplying healthier high quality nutritious ingredients all locally sourced
+
+// Slide 3: We are creating the next generation of food ingredient using high tech production facilities 
+
+// Slide 4: INGANCI is bringing together research, local manufacturing and also adding value to the end customer

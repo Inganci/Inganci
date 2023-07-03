@@ -8,8 +8,14 @@ import Footer from '../components/Footer';
 import Missions from '../components/Missions';
 import OurGoals from '../components/OurGoals';
 import OurTeam from '../components/OurTeam';
+import { useEffect } from 'react';
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
       <Hero /> 

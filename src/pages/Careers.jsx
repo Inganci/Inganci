@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import eggnbowl from "../assets/eggnbowl.jpg";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,6 +6,10 @@ import { Link, useNavigate } from "react-router-dom";
 const Careers = () => {
 
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="w-full ">

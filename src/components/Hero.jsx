@@ -15,6 +15,7 @@ const Hero = () => {
   const [titleIdx, setTitleIdx] = useState(0);
 
   
+  
   const handleChangeTitleIndex = () => { 
     setTitleIdx(titleIdx + 1)
     if (titleIdx >= titles.length - 1 ) {
@@ -71,7 +72,7 @@ const Hero = () => {
                         ? titles.map((item, idx) => (
                             <>
                               {idx === titleIdx && (
-                                <h1 className="  my-fadein text-[56px] 2xl:text-[72px] font-bold text-white leading-[56px] 2xl:leading-[76px] mb-[26px]">
+                                <h1 className="  my-fadein text-[52px] 2xl:text-[72px] font-bold text-white leading-[60px] 2xl:leading-[76px] my-[26px]">
                                   {item.title}
                                 </h1>
                               )}
@@ -88,7 +89,7 @@ const Hero = () => {
                     {/* BUTTONS CTAS */}
                     <div className="flex items-center gap-4">
                       {/* GREEN */}
-                      <button className="hidden xl:block bg-primary py-3 w-[142px] rounded text-sm hover:bg-white hover:text-primaryDark transition duration-200">
+                      <button className="hidden xl:block bg-primary text-white py-3 w-[142px] rounded text-sm hover:bg-white hover:text-primaryDark transition duration-200">
                         Products
                       </button>
                       {/* YELLOW */}

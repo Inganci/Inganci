@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import { Call, Message, Send } from "iconsax-react";
 
 const ContactUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="w-full">
       <div className="w-full min-h-screen flex items-center">

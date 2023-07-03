@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
 import {blogs} from "../data/data"
 import { Messages2, ProfileCircle } from 'iconsax-react'
 
 const Blog = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="w-full">
